@@ -30,6 +30,7 @@ public:
     typedef QSharedPointer<Z3D::ZMultiCameraCalibration> Ptr;
 
     explicit ZMultiCameraCalibration(std::vector<ZCameraCalibration::Ptr> calibrations);
+    virtual ~ZMultiCameraCalibration();
 
     std::vector<ZCameraCalibration::Ptr> calibrations() const;
 
